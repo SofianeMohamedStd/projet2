@@ -60,10 +60,28 @@ body,html {
     
     
 }
+#section5{
+    height: 100vh;
+    width: auto;
+    background: #bf964b url('../img/image5.jpg') no-repeat center bottom;  
+    background-attachment: scroll;
+    background-size: cover;
+    
+    
+}
+#section6{
+    height: 100vh;
+    width: auto;
+    background: #bf964b no-repeat center bottom;  
+    background-attachment: scroll;
+    background-size: cover;
+    
+    
+}
 #section1 .container{
     display: flex;
     width: 80%;
-    height: 100%;
+    height: 80%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -74,7 +92,8 @@ body,html {
     display: flex;
     flex: auto;
     justify-content:space-around;
-    align-items:center;
+    align-items:flex-end;
+    flex-flow: row nowrap;
     
 }
 .percent{
@@ -84,6 +103,18 @@ body,html {
 }
 .justi{
     flex-direction:row;
+}
+#section1 h2{
+    margin-block-start: 1em;
+    margin-block-end: 0em;
+}
+#section1 button{
+    width: 120px;
+    height: 50px;
+    background-color: white;
+    border-color: transparent;
+    font-size: 14pt;
+    text-align: center;
 }
 #section2 .container{
     display: flex;
@@ -131,7 +162,8 @@ body,html {
 	width: 300px;
 	height: 300px;
 }
-#section4{
+
+#section6{
     height: 100vh;
     width: auto;
     background: #bf964b no-repeat center bottom;  
@@ -140,25 +172,53 @@ body,html {
     
     
 }
+#section7{
+    height: 100vh;
+    width: auto;  
+    background: #736c4d no-repeat center bottom;  
+    background-attachment: scroll;
+    background-size: cover;
+    
+    
+}
+#maptest{
+    display: flex;
+    width: auto;
+    height: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; 
+}
 #section4 .container{
     display: flex;
     width: 80%;
+    height: 30%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#section4 .container1{
+    display: flex;
+    width:  auto;
     height: 20%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-}#section4 .container1{
-    display: flex;
-    width:  auto;
-    height: 80%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
+#section4 .container2{
+    display: flex;
+    width:  auto;
+    height: 60%;
+    display: flex;
+    flex: auto;
+    justify-content:space-around;
+    align-items:center;
+}
 #section4 .row{
     display: flex;
     flex: auto;
@@ -178,8 +238,10 @@ body,html {
     align-self: flex-start;
 }
 #section4 .position{
-    justify-content: space-between;
-    align-self: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    
 }
 #section4 .position1{
     
@@ -212,7 +274,23 @@ body,html {
     border-color: transparent;
     font-size: 56pt;
 }
-
+#section6 .container{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#section6 .row{
+    display:flex;
+    
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    
+}
 @media only screen and (max-width : 360px) {
     #section2{
         height: 100vh;
@@ -285,9 +363,10 @@ body,html {
     }
     #section4 .percent{
         
-        font-size:40px;
+        font-size:20px;
         
     }
+    
     #section4 .container{
         display: flex;
         width: 80%;
@@ -297,5 +376,30 @@ body,html {
         margin-right: auto;
         margin-left: auto;
     }
+    #section4 .container1{
+        display: flex;
+        width:  auto;
+        height: 60%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    #section4 .container2{
+        display: flex;
+        width:  auto;
+        height: 30%;
+        display: flex;
+        flex: auto;
+        justify-content:space-around;
+        align-items:center;
+    }
 
+    #section6 .percent{
+        
+        font-size:20px;
+        
+    }
 }

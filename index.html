@@ -5,12 +5,20 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   <!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+ integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+ crossorigin=""></script>
+    <script src="./assets/js/main.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
 
 
 </head>
 
-<body>
+<body onload="init()">
     <section id="section1">
         <div class="container">
             <div class="row">
@@ -67,42 +75,62 @@
     <section id="section4">
         <div class="container">
             <div class="row">
-                <div class="titre">
-                    <h1>Our golden dishes</h1>
-                </div>
+                
+                    <h1 class="percent">Our golden dishes</h1>
+                
             </div>
         </div>
         <div class="container1">
-            <div class="row1">
 
 
-                <div class="position">
-                    
-                        <img src="assets/img/image4.jpg" alt="4">
-                    
-                  
 
-                        <img src="assets/img/image4.jpg" alt="4">
-                   
 
-                        <img src="assets/img/image4.jpg" alt="4">
 
-                        <div class="row1 position1">
-                            <div>
-                                <h1 class="percent">First time here?</h1>
-            
-            
-                                <h2>click here to get your discount code</h2>
-            
-            
-                                <button>100$</button>
-                            </div>
+            <img src="assets/img/image4.jpg" alt="4">
+
+
+
+            <img src="assets/img/image4.jpg" alt="4">
+
+
+            <img src="assets/img/image4.jpg" alt="4">
+        </div>
+        <div class="container2">
+
+            <div class="position">
+                <div>
+                    <h1 class="percent">First time here?</h1>
                 </div>
-                
+                <div>
+
+                    <h2>click here to get your discount code</h2>
                 </div>
-    
+                <div>
+                    <button>100$</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        </div>
+
+
+
+    </section>
+    <section id="section5"></section>
+    <section id="section6">
+        <div class="container">
+            <div class="row">
+                <h1 class="percent">‘’what is done in love is well done’’</h1>
+                <h1 class="percent">Vincent Van Gogh</h1>
             </div>
         </div>
+    </section>
+    <section id="section7">
+       <div id="maptest" >
+
+       </div >
     </section>
 </body>
 
