@@ -1,0 +1,66 @@
+body,html {
+    margin:0;
+ padding:0;
+    position: relative; 
+}
+
+
+
+#section1{
+    height: 100vh;
+    width: auto;
+    background: #bf964b url('../img/image1.png') no-repeat center bottom;  
+    background-attachment: scroll;
+    background-size: cover;
+    
+    
+}
+#section2{
+    height: 100vh;
+    width: auto;
+    background: #bf964b no-repeat center bottom;  
+    background-attachment: scroll;
+    background-size: cover;
+    
+    
+}
+#section1 .container{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#section1 .row{
+    display: flex;
+    flex: auto;
+    justify-content:space-around;
+    align-items:center;
+    
+}
+#section2 .container{
+    display: flex;
+    width: 99%;
+    height: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#section2 .row{
+    display: flex;
+    flex: auto;
+    justify-content:flex-start;
+    align-items:center;
+    
+}
+#section2 .position {
+    width: 100px;
+	height: 100px;
+}
+#section2 img {
+	width: 300px;
+	height: 400px;
+}
