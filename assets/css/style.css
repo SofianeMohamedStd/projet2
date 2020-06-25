@@ -39,11 +39,13 @@ body,html {
     background: #bf964b url('../img/image1.png') no-repeat center bottom;  
     background-attachment: scroll;
     background-size: cover;
-    
+    box-shadow: inset 0px 400px 100px 0 rgba(0, 0, 0, 0.671), 
+            inset 0 300px 15px 0px rgba(19, 18, 18, 0.411),
+            inset 0 400px 5px 0px rgba(7, 7, 7, 0.404);
     
 }
 #section2{
-    height: 100vh;
+    height: 200vh;
     width: auto;
     background: #bf964b no-repeat center bottom;  
     background-attachment: scroll;
@@ -55,6 +57,15 @@ body,html {
     height: 100vh;
     width: auto;
     background: #736c4d no-repeat center bottom;  
+    background-attachment: scroll;
+    background-size: cover;
+    
+    
+}
+#section4{
+    height: 150vh;
+    width: auto;
+    background: #bf964b no-repeat center bottom;  
     background-attachment: scroll;
     background-size: cover;
     
@@ -138,7 +149,7 @@ body,html {
 }
 #section2 img {
 	width: 300px;
-	height: 400px;
+	height: 500px;
 }
 
 #section3 .container{
@@ -175,7 +186,6 @@ body,html {
 #section7{
     height: 100vh;
     width: auto;  
-    background: #736c4d no-repeat center bottom;  
     background-attachment: scroll;
     background-size: cover;
     
@@ -184,7 +194,7 @@ body,html {
 #maptest{
     display: flex;
     width: auto;
-    height: 80%;
+    height: 100%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -214,10 +224,16 @@ body,html {
     display: flex;
     width:  auto;
     height: 60%;
+    flex: auto;
+    justify-content:space-around;
+    align-items:center;
+}
+#section4 .container3{
     display: flex;
     flex: auto;
     justify-content:space-around;
     align-items:center;
+    flex-direction: column;
 }
 #section4 .row{
     display: flex;
@@ -291,9 +307,49 @@ body,html {
     flex-direction: column;
     
 }
+#section8{
+    height: 100vh;
+    width: auto;
+    background: #736c4d no-repeat center bottom;  
+    background-attachment: scroll;
+    background-size: cover;
+    
+    
+}
+#section8 .container{
+    display: flex;
+    position: relative;
+  width: auto;
+  height: 50%;
+  margin: 0 auto;
+    background-color: #bf964b;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    top: 25%;
+
+}
+#section8 .container1{
+    width: 80%;
+    display: flex;
+    position: relative;
+    justify-content:space-between;
+    align-items: flex-start;
+
+}
+#section8 .item {
+    flex-grow: 1; /* default 0 */
+  }
+ .simg{
+    font-size:60px;
+    color:white;
+ }
+ #section8 .persentt{
+    color:white;
+ }
 @media only screen and (max-width : 360px) {
     #section2{
-        height: 100vh;
+        height: 110vh;
         width: auto;
         background: #bf964b no-repeat center bottom;   
         background-attachment: scroll;
@@ -380,12 +436,14 @@ body,html {
         display: flex;
         width:  auto;
         height: 60%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-        justify-content: space-around;
+        justify-content: center;
+        justify-items: center;
         flex-direction: column;
+    }
+     img{
+         display: flex;
+        justify-content: center;
+        
     }
     #section4 .container2{
         display: flex;
@@ -395,6 +453,7 @@ body,html {
         flex: auto;
         justify-content:space-around;
         align-items:center;
+
     }
 
     #section6 .percent{
