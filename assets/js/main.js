@@ -1,7 +1,7 @@
 function init(){
     
     const o = {lat: 47.752045, lng: 7.316796};
-    const zoomLevel = 20;
+    const zoomLevel = 10;
 
     const map = L.map('mapp').setView([o.lat, o.lng], zoomLevel);
 
